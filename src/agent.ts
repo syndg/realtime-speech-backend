@@ -30,6 +30,7 @@ export default defineAgent({
       temperature: initialConfig.temperature,
       maxResponseOutputTokens: Infinity,
       turnDetection: JSON.parse(initialConfig.turn_detection),
+      model: "gpt-4o-mini-realtime-preview-2024-12-17"
     });
 
     const fncCtx: llm.FunctionContext = {
